@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --shadow-cards: 2px 2px 2px 1px #00000033;
+}
+
+body {
+    background: var(--body-bg-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+    margin: 40px 40px 0;
+}
+
+/* INFORMAÇÕES DO USUARIO */
+
+.profile {
+    text-align: center;
+    padding: 32px 70px 49px;
+    line-height: 28px;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: var(--shadow-cards)
+}
+
+.profile h3 {
+    font-size: 23px;
+
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    border: 2px solid #00FF00;
+}
+
+.profile p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+/* PROJETOS E POSTS */
+
+.projects-and-posts {
+    flex: 1;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-cards);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-cards);
+    margin-bottom: 30px;
+}
+
+.projects h3 {
+    font-size: 20px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.projects a:hover {
+    color: #837e9fa5;
+    transition: 0.3s;
+}
+
+.repos {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.repo {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    flex: 1;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-cards);
+    background: var(--bg-cards);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .2s;
+}
+
+.repo:hover {
+    background: #302f3d5d;
+    transition: .2s;
+}
+
+.repo p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.my-repo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.my-repo p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.info-repo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-repo span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.stars-branch {
+    display: flex;
+    gap: 16px;
+}
+
+.stars-branch div {
+    display: flex;
+    gap: 8px;
+}
+
+.language {
+    display: flex;
+    gap: 8px;
+}
+
+.posts {
+    background: var(--bg-cards);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-cards);
+    margin-bottom: 30px;
+}
+
+.recent-post {
+    display: flex;
+    background: var(--bg-cards);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-cards);
+    margin-bottom: 30px; 
+    transition: .2s;
+}
+
+.recent-post img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.recent-post:hover {
+    background: #302f3d5d;
+    transition: .2s;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
