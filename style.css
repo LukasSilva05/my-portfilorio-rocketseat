@@ -30,13 +30,18 @@ h3 {
 
 /* INFORMAÇÕES DO USUARIO */
 
+.profile-informations {
+    width: 380px;
+}
+
 .profile {
     text-align: center;
     padding: 32px 70px 49px;
     line-height: 28px;
     background: var(--bg-cards);
     border-radius: 20px;
-    box-shadow: var(--shadow-cards)
+    box-shadow: var(--shadow-cards);
+    margin-bottom: 30px;
 }
 
 .profile h3 {
@@ -56,6 +61,70 @@ h3 {
     font-size: 13px;
 }
 
+.social-infos {
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: var(--shadow-cards);
+    padding: 30px 40px;
+    margin-bottom: 30px;
+}
+
+.social-infos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-infos ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.technologies {
+    padding: 30px 20px;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.technologies h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tech-names ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.tech-names ul li {
+    background: var(--bg-techs);
+    text-align: center;
+    color: black;
+    width: 95px;
+    padding: 6px 0;
+    border-radius: 30px;
+}
+
+.experiences {
+    padding: 30px 20px;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.educations {
+    padding: 30px 20px;
+    background: var(--bg-cards);
+    border-radius: 20px;
+}
 
 /* PROJETOS E POSTS */
 
@@ -93,6 +162,7 @@ h3 {
 
 .repos {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
 }
@@ -167,11 +237,14 @@ h3 {
 
 .recent-post {
     display: flex;
+    gap: 20px;
     background: var(--bg-cards);
+    text-decoration: none;
+    color: var(--text-color);
     padding: 30px;
     border-radius: 20px;
     box-shadow: var(--shadow-cards);
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     transition: .2s;
 }
 
@@ -183,6 +256,25 @@ h3 {
 .recent-post:hover {
     background: #302f3d5d;
     transition: .2s;
+}
+
+.post-info h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.post-info .time {
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+.post-info p {
+    margin-bottom: 10px;
+}
+
+.post-info ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
 
 /* FOOTER */
